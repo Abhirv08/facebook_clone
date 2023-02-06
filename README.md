@@ -1,4 +1,4 @@
-You can watch it <a href = "myfacebookclone.netlify.app" > here </a>
+You can watch it <a href = "https://myfacebookclone.netlify.app/" > here </a>
 
 # Getting Started with Create React App
 
