@@ -1,0 +1,76 @@
+.rightbar_container {
+  padding-top: 1rem;
+  margin-top: 61px;
+  height: calc(100vh - 65px);
+  width: 20%;
+  position: fixed;
+  right: 10px;
+}
+
+.rightbar_container > .rightbar_heading {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #74767B;
+    margin-bottom: 1rem;
+}
+
+.rightbar_container > .create_new_group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 90%;
+  border-radius: 5px;
+}
+
+.rightbar_container > .create_new_group:hover{
+    background-color: #eaebec;
+}
+
+.rightbar_container > .create_new_group > .add_icon{
+    background-color: #E5E7EB;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    padding: 5px;
+}
+
+.rightbar_container > .create_new_group > .add_icon > .add_icon_class{
+    font-size: 1.1rem;
+}
+
+.rightbar_container > .tooltip_container{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    position: absolute;    
+    top: 88%;
+    left: 45%;
+}
+
+.rightbar_container > .tooltip_container > .tooltip_text{
+    background-color: #2f2f30;
+    color: white;
+    font-size: 0.7rem;
+    padding: 8px 10px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.rightbar_container > div > .new_message {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 10px 5px 20px 5px #D2D4D7;
+    width: 50px;
+    height: 50px;
+    position: sticky;    
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.rightbar_container > div > .new_message:hover{
+    background-color: #eaebec;
+}

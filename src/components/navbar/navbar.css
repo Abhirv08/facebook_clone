@@ -1,0 +1,165 @@
+.navbar_container{
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 3.5rem;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+}
+
+.navbar_container > .first_part{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_container > .first_part > label{
+    display: flex;
+    align-items: center;
+    background-color: #F1F2F4;
+    padding: 5px 10px;
+    border-radius: 16px;
+    cursor:text;
+}
+
+.navbar_container > .first_part > label > div > .search_icon{
+    font-size: 1rem !important;
+}
+
+.navbar_container > .first_part > label > div > input{
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: #F1F2F4;
+}
+
+.navbar_container > .first_part > label > div > input::placeholder{
+    font-size: 1.2rem;
+}
+
+.navbar_container > .middle_part{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navbar_container > .middle_part > .mid_icons_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    place-items: center;
+}
+
+.navbar_container > .middle_part > .mid_icons_container > li{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    list-style: none;
+}
+
+.navbar_container > .middle_part > .mid_icons_container > li:nth-child(3){
+    display: none;
+}
+
+.navbar_container > .middle_part > .mid_icons_container > .active{
+    border-bottom: 4px solid #1B74E4;
+}
+
+.navbar_container > .middle_part > .mid_icons_container > .active > svg{
+    color: #1B74E4;
+}
+
+.navbar_container > .middle_part > .mid_icons_container > div:hover:not(.active) {
+    background-color: #F3F3F2;
+}
+
+.navbar_container > .last_part{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_container > .last_part > div:hover{
+    background-color: rgb(211, 211, 210);
+}
+
+.navbar_container > .first_part > img{
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navbar_container > .last_part > .find_friends{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    padding: 6px 10px;
+    border-radius: 15px;
+    background-color: #E5E7EB;
+}
+
+.navbar_container > .last_part > .menu{
+    display: grid;
+    align-items: center;
+    background-color: #E5E7EB;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar_container > .last_part > .menu > img{
+    width: 25px;
+    
+}
+
+.navbar_container > .last_part > .messenger_logo{
+    display: grid;
+    place-items: center;
+    background-color: #E5E7EB;
+    padding: 9.5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar_container > .last_part > .messenger_logo > img{
+    width: 20px;
+}
+
+
+.navbar_container > .last_part > .notification_logo{
+    display: grid;
+    align-items: center;
+    background-color: #E5E7EB;
+    padding: 9.5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar_container > .last_part > .notification_logo > img{
+    width: 20px;
+}
+
+.navbar_container > .last_part > .profile{
+    display: grid;
+    align-items: center;
+    background-color: #E5E7EB;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar_container > .last_part > .profile > img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+

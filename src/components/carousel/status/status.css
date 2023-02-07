@@ -1,0 +1,97 @@
+
+.feed_container > .status_container{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 1;
+    height: 13rem;
+    width: 37rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.feed_container > .status_container > .create_own_story_container{
+    width: 7rem;
+    height: 12.6rem;
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgb(219, 219, 219);
+}
+
+.feed_container > .status_container > .create_own_story_container > .add_story_icon_container{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    box-sizing: content-box;
+    border: 4px solid white;
+    display: grid;
+    place-items: center;
+    background-color: #166ADA;
+    bottom: calc(25% - 1.1rem);
+    left: calc(3.5rem - 1.2rem);
+}
+
+.feed_container > .status_container > .create_own_story_container > .add_story_icon_container > .add_story_icon{
+    color: white;
+}
+
+.feed_container > .status_container > .create_own_story_container > .story_dp_container{
+    width: 100%;
+    height: 75%;
+}
+
+.feed_container > .status_container > .create_own_story_container > .story_dp_container > .story_dp{
+    width:100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.feed_container > .status_container > .create_own_story_container > .story_dp_text{
+    background-color: white;
+    height: 25%;
+    display: grid;
+    place-items: center;    
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 15%;
+}
+
+
+.feed_container > .status_container > .see_status{
+    position: absolute;
+    background-color: white;
+    width: 2.5rem; height: 2.5rem;
+    border: 1px solid #E4E7EA;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    top: 40%;
+    right: -1.25rem;
+}
+
+.feed_container > .status_container > .see_status > .see_all_stories{
+    position: absolute;
+    display: block;
+    width: 6rem;
+    bottom: -2.25rem;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(53, 51, 51);
+    color: rgb(228, 227, 227);
+    font-size: 0.76rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(68, 68, 68);
+    visibility: hidden;
+}
+
+.feed_container > .status_container > .see_status:hover{
+    background-color: #ebe8e8;
+    transition: all 1s ease-in-out;
+}

@@ -1,0 +1,7 @@
+
+.home_page_container > .home_page_body{
+    background-color: #F1F2F4;  
+    display: flex;
+    flex-basis: auto;
+}
+
