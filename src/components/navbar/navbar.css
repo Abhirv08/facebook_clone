@@ -39,6 +39,12 @@
     font-size: 1.2rem;
 }
 
+.navbar_container > .first_part > img{
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .navbar_container > .middle_part{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -51,29 +57,31 @@
     place-items: center;
 }
 
-.navbar_container > .middle_part > .mid_icons_container > li{
-    box-sizing: border-box;
+.navbar_container > .middle_part > .mid_icons_container > .active{
     width: 100%;
-    height: 100%;
-    cursor: pointer;
+    height: 94%;
     display: grid;
     place-items: center;
-    list-style: none;
+    border-bottom: 3px solid #1B74E4;
 }
 
-.navbar_container > .middle_part > .mid_icons_container > li:nth-child(3){
-    display: none;
-}
-
-.navbar_container > .middle_part > .mid_icons_container > .active{
-    border-bottom: 4px solid #1B74E4;
-}
-
-.navbar_container > .middle_part > .mid_icons_container > .active > svg{
+.navbar_container > .middle_part > .mid_icons_container > .active > .icon{
     color: #1B74E4;
 }
 
-.navbar_container > .middle_part > .mid_icons_container > div:hover:not(.active) {
+.navbar_container > .middle_part > .mid_icons_container > .inactive{
+    width: 100%;
+    height: 94%;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.navbar_container > .middle_part > .mid_icons_container > .inactive > .icon{
+    color: black;
+}
+
+.navbar_container > .middle_part > .mid_icons_container > .inactive:hover {
     background-color: #F3F3F2;
 }
 
@@ -85,23 +93,22 @@
 }
 
 .navbar_container > .last_part > div:hover{
-    background-color: rgb(211, 211, 210);
+    background-color: rgba(211, 211, 210, 0.9);
 }
 
-.navbar_container > .first_part > img{
-    width: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-}
 
 .navbar_container > .last_part > .find_friends{
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     color: black;
-    padding: 6px 10px;
-    border-radius: 15px;
+    padding: 10px 15px;
+    border-radius: 20px;
     background-color: #E5E7EB;
+}
+
+.navbar_container > .last_part > .find_friends:hover{
+    background-color: rgba(211, 211, 210, 0.7);
 }
 
 .navbar_container > .last_part > .menu{

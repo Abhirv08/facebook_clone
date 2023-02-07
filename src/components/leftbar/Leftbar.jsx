@@ -101,7 +101,7 @@ export default function Leftbar() {
     }
   ]
 
-  const [showlist2, setShowlist2] = useState(true);
+  const [showlist2, setShowlist2] = useState(false);
 
 
   return (
@@ -121,11 +121,11 @@ export default function Leftbar() {
         ))
       }
 
-      {!showlist2 && <div className="leftbar_item">
+      {!showlist2 && <div className="leftbar_item" onClick={() => setShowlist2(true)}>
         <div><ExpandMoreOutlinedIcon /></div>
         <div className="leftbar_item_title"> See more </div>
       </div>}
-      {showlist2 && <div className="leftbar_item">
+      {showlist2 && <div className="leftbar_item" onClick={() => setShowlist2(false)}>
         <div><ExpandLessOutlinedIcon /></div>
         <div className="leftbar_item_title"> See less </div>
       </div>}

@@ -1,89 +1,91 @@
-
-.addpost_container{
-    width: 100%;
-    margin-top: 1rem;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 1px 1px 1px 1px #F0F2F5;
+.addpost_container {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.18);
+-webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.18);
+-moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.18);
 }
 
-.addpost_container > .addpost_content{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.addpost_container > .addpost_content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.addpost_container > .addpost_content > .writing_field{
-    width: 100%;
-    background-color: #F0F2F5;
-    padding: 10px;
-    border-radius: 25px;
-    user-select: none;
-    cursor: pointer;
-    opacity: 70%;
+.addpost_container > .addpost_content > .writing_field {
+  width: 100%;
+  background-color: #f0f2f5;
+  padding: 10px;
+  border-radius: 25px;
+  user-select: none;
+  cursor: pointer;
+  opacity: 70%;
 }
 
-.addpost_container > .addpost_content > .writing_field:hover, .addpost_container> .addpost_content > .profile:hover{
-    background-color: rgb(211, 211, 210);
+.addpost_container > .addpost_content > .writing_field:hover,
+.addpost_container > .addpost_content > .profile:hover {
+  background-color: rgb(211, 211, 210);
 }
 
-.addpost_container > hr{
-    margin: 10px 0;
-    border: none;
-    height: 1px;
-    background-color: #E4E7EA;
+.addpost_container > hr {
+  margin: 10px 0;
+  border: none;
+  height: 1px;
+  background-color: #e4e7ea;
 }
 
-.addpost_container > .addpost_content > .profile{
-    display: grid;
-    align-items: center;
-    background-color: #E5E7EB;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
+.addpost_container > .addpost_content > .profile {
+  display: grid;
+  align-items: center;
+  background-color: #e5e7eb;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.addpost_container > .addpost_content > .profile > img{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    object-fit: cover;
+.addpost_container > .addpost_content > .profile > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.addpost_container> .post_attachments{
-    display: flex;
-    flex-basis: 1;
-    align-items: center;
-    justify-content: space-evenly;
+.addpost_container > .post_attachments {
+  display: flex;
+  flex-basis: 1;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.addpost_container > .post_attachments > div{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    padding: 6px 10px;
-    border-radius: 10px;
+.addpost_container > .post_attachments > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 10px;
 }
 
-.addpost_container > .post_attachments > div:hover{
-    background-color: rgba(233, 233, 233, 0.9);
+.addpost_container > .post_attachments > div:hover {
+  background-color: rgba(233, 233, 233, 0.9);
 }
 
-.addpost_container > .post_attachments > div:nth-child(1){
-    color: red;
+.addpost_container > .post_attachments > div:nth-child(1) {
+  color: red;
 }
 
-.addpost_container > .post_attachments > div:nth-child(2){
-    color: rgb(32, 151, 32);
+.addpost_container > .post_attachments > div:nth-child(2) {
+  color: rgb(32, 151, 32);
 }
 
-.addpost_container > .post_attachments > div:nth-child(3){
-    color: rgb(255, 187, 0);
+.addpost_container > .post_attachments > div:nth-child(3) {
+  color: rgb(255, 187, 0);
 }
 
-.addpost_container > .post_attachments > div > p{
-    color: rgb(122, 122, 122);
-    font-weight: 500;
+.addpost_container > .post_attachments > div > p {
+  color: rgb(122, 122, 122);
+  font-weight: 500;
 }
