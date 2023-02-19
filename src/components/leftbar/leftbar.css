@@ -8,6 +8,12 @@
     position: fixed;
 }
 
+@media screen and (max-width: 1200px) {
+    .leftbar_container{
+        width: 0;
+    }
+}
+
 .leftbar_container::-webkit-scrollbar{
     width: 8px;
 }
@@ -45,4 +51,10 @@
 
 .leftbar_container > .leftbar_item > .leftbar_item_title{
     font-weight: 500;
+}
+
+@media screen and (max-width: 1100px){   
+    .leftbar_container{
+        display: none;
+    }
 }

@@ -1,172 +1,245 @@
-.navbar_container{
-    width: 100%;
-    display: inline-grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    height: 3.5rem;
-    background-color: white;
-    position: fixed;
-    z-index: 999;
+.navbar_container {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 3.5rem;
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+  box-shadow: 1px 1px 1px 1px rgb(199, 199, 199);
 }
 
-.navbar_container > .first_part{
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    align-items: center;
+.navbar_container > .first_part {
+  display: flex;
+  gap: 12px;
+  padding-left: 5%;
+  align-items: center;
 }
 
-.navbar_container > .first_part > label{
-    display: flex;
-    align-items: center;
-    background-color: #F1F2F4;
-    padding: 5px 10px;
-    border-radius: 16px;
-    cursor:text;
+.navbar_container > .first_part > label {
+  display: flex;
+  align-items: center;
+  background-color: #f1f2f4;
+  padding: 5px 10px;
+  border-radius: 16px;
+  cursor: text;
 }
 
-.navbar_container > .first_part > label > div > .search_icon{
-    font-size: 1rem !important;
+.navbar_container > .first_part > label > div > .search_icon {
+  font-size: 1rem !important;
 }
 
-.navbar_container > .first_part > label > div > input{
-    padding: 5px;
-    outline: none;
-    border: none;
-    background-color: #F1F2F4;
+.navbar_container > .first_part > label > div > input {
+  padding: 5px;
+  outline: none;
+  border: none;
+  background-color: #f1f2f4;
 }
 
-.navbar_container > .first_part > label > div > input::placeholder{
-    font-size: 1.2rem;
+.navbar_container > .first_part > label > div > input::placeholder {
+  font-size: 1.2rem;
 }
 
-.navbar_container > .first_part > img{
-    width: 60px;
-    border-radius: 50%;
-    object-fit: cover;
+.navbar_container > .first_part > img {
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.navbar_container > .middle_part{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.navbar_container > .middle_part {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.navbar_container > .middle_part > .mid_icons_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    place-items: center;
+.navbar_container > .middle_part > .mid_icons_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  place-items: center;
 }
 
-.navbar_container > .middle_part > .mid_icons_container > .active{
-    width: 100%;
-    height: 94%;
-    display: grid;
-    place-items: center;
-    border-bottom: 3px solid #1B74E4;
+.navbar_container > .middle_part > .mid_icons_container > .active {
+  width: 100%;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-bottom: 3px solid #1b74e4;
 }
 
-.navbar_container > .middle_part > .mid_icons_container > .active > .icon{
-    color: #1B74E4;
+.navbar_container > .middle_part > .mid_icons_container > .active > .icon {
+  color: #1b74e4;
 }
 
-.navbar_container > .middle_part > .mid_icons_container > .inactive{
-    width: 100%;
-    height: 94%;
-    border-radius: 10px;
-    display: grid;
-    place-items: center;
+.navbar_container > .middle_part > .mid_icons_container > .inactive {
+  width: 100%;
+  height: 56px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
 }
 
-.navbar_container > .middle_part > .mid_icons_container > .inactive > .icon{
-    color: black;
+.navbar_container > .middle_part > .mid_icons_container > .inactive > .icon {
+  color: black;
 }
 
 .navbar_container > .middle_part > .mid_icons_container > .inactive:hover {
-    background-color: #F3F3F2;
+  background-color: #f3f3f2;
 }
 
-.navbar_container > .last_part{
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    align-items: center;
+@media screen and (min-width: 1200px) {
+  .navbar_container > .middle_part > .mid_icons_container > .hamburger_icon {
+    display: none;
+  }
 }
 
-.navbar_container > .last_part > div:hover{
-    background-color: rgba(211, 211, 210, 0.9);
+.navbar_container > .last_part {
+  display: flex;
+  gap: 12px;
+  padding-right: 5%;
+  align-items: center;
 }
 
-
-.navbar_container > .last_part > .find_friends{
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    color: black;
-    padding: 10px 15px;
-    border-radius: 20px;
-    background-color: #E5E7EB;
+.navbar_container > .last_part > div:hover {
+  background-color: rgba(211, 211, 210, 0.9);
 }
 
-.navbar_container > .last_part > .find_friends:hover{
-    background-color: rgba(211, 211, 210, 0.7);
+.navbar_container > .last_part > .find_friends {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: #e5e7eb;
 }
 
-.navbar_container > .last_part > .menu{
-    display: grid;
-    align-items: center;
-    background-color: #E5E7EB;
-    padding: 7px;
+.navbar_container > .last_part > .find_friends:hover {
+  background-color: rgba(211, 211, 210, 0.7);
+}
+
+.navbar_container > .last_part > .menu {
+  display: grid;
+  align-items: center;
+  background-color: #e5e7eb;
+  padding: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navbar_container > .last_part > .menu > img {
+  width: 25px;
+}
+
+.navbar_container > .last_part > .add {
+  display: none;
+}
+
+.navbar_container > .last_part > .messenger_logo {
+  display: grid;
+  place-items: center;
+  background-color: #e5e7eb;
+  padding: 9.5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navbar_container > .last_part > .messenger_logo > img {
+  width: 20px;
+}
+
+.navbar_container > .last_part > .notification_logo {
+  display: grid;
+  align-items: center;
+  background-color: #e5e7eb;
+  padding: 9.5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navbar_container > .last_part > .notification_logo > img {
+  width: 20px;
+}
+
+.navbar_container > .last_part > .profile {
+  display: grid;
+  align-items: center;
+  background-color: #e5e7eb;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navbar_container > .last_part > .profile > img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1300px) {
+  .navbar_container > .first_part {
+    padding-left: 5%;
+    justify-content: flex-start;
+  }
+
+  .navbar_container > .first_part > label {
     border-radius: 50%;
-    cursor: pointer;
+    padding: 9px 11px;
+  }
+
+  .navbar_container > .first_part > label > .search_input_box {
+    display: none;
+  }
+
+  .navbar_container > .last_part > .find_friends {
+    display: none;
+  }
+
+  .navbar_container > .last_part {
+    padding-right: 5%;
+    justify-content: flex-end;
+  }
 }
 
-.navbar_container > .last_part > .menu > img{
-    width: 25px;
-    
-}
+@media screen and (max-width: 1200px) {
+  .navbar_container > .middle_part {
+    grid-template-columns: 20% 60% 20%;
+  }
 
-.navbar_container > .last_part > .messenger_logo{
+  .navbar_container > .middle_part > .mid_icons_container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .navbar_container > .last_part > .menu {
+    display: none;
+  }
+
+  .navbar_container > .last_part > .add {
     display: grid;
     place-items: center;
-    background-color: #E5E7EB;
+    background-color: #e5e7eb;
     padding: 9.5px;
     border-radius: 50%;
     cursor: pointer;
+  }
 }
 
-.navbar_container > .last_part > .messenger_logo > img{
-    width: 20px;
+@media screen and (max-width: 700px) {
+    .navbar_container {
+        grid-template-columns: 1fr 1fr;
+      }
+
+    .navbar_container > .first_part {
+        padding-left: 5%;
+        justify-content: flex-start;
+      }
+
+    .navbar_container > .middle_part{
+        display: none;
+    }
+
+    .navbar_container > .last_part {
+        padding-right: 5%;
+        justify-content: flex-end;
+      }
 }
-
-
-.navbar_container > .last_part > .notification_logo{
-    display: grid;
-    align-items: center;
-    background-color: #E5E7EB;
-    padding: 9.5px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.navbar_container > .last_part > .notification_logo > img{
-    width: 20px;
-}
-
-.navbar_container > .last_part > .profile{
-    display: grid;
-    align-items: center;
-    background-color: #E5E7EB;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.navbar_container > .last_part > .profile > img{
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-
-
