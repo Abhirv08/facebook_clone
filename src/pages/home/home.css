@@ -1,6 +1,47 @@
+.home_page_container > .home_page_body {
+  background-color: #f1f2f4;
+  display: flex;
+  flex-basis: auto;
+}
 
-.home_page_container > .home_page_body{
-    background-color: #F1F2F4;  
+.home_page_container > .tooltip_container{
     display: flex;
-    flex-basis: auto;
+    align-items: center;
+    gap: 2px;
+    position: fixed;    
+    top: 90%;
+    right: 1.5rem;    
+}
+
+.home_page_container > .tooltip_container > .tooltip_text{
+    background-color: rgb(53, 51, 51);
+    color: rgb(228, 227, 227);
+    font-size: 0.76rem;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(68, 68, 68);
+    visibility: hidden;
+}
+
+.home_page_container > div > .new_message {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),0 12px 28px rgba(0, 0, 0, 0.2);
+    width: 50px;
+    height: 50px;
+    position: sticky;    
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.home_page_container > div > .new_message:hover{
+    background-color: #eaebec;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),0 16px 28px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 508px){
+    .home_page_container > .tooltip_container{
+        right: 1rem; 
+    }
 }

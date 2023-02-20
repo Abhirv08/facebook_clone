@@ -2,6 +2,7 @@ import './status.css'
 import StatusCard from "../../carousel_item/status_card/StatusCard"
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+import MediaQuery from 'react-responsive';
 
 export default function Status() {
     const dp = {
@@ -26,7 +27,9 @@ export default function Status() {
             <StatusCard statusimage="./assets/status/status1.jpg" dpimage="./assets/person/person1.jpg" />
             <StatusCard statusimage="./assets/status/status2.jpg" dpimage="./assets/person/person2.jpg" />
             <StatusCard statusimage="./assets/status/status3.jpg" dpimage="./assets/person/person3.jpg" />
-            <StatusCard statusimage="./assets/status/status4.jpg" dpimage="./assets/person/person4.jpg" />
+            <MediaQuery minWidth={700}>
+                <StatusCard statusimage="./assets/status/status4.jpg" dpimage="./assets/person/person4.jpg" />
+            </MediaQuery>
             <div className="see_status"
                 onMouseEnter={() => document.querySelector(".see_all_stories").style.visibility = "visible"}
                 onMouseLeave={() => document.querySelector(".see_all_stories").style.visibility = "hidden"}

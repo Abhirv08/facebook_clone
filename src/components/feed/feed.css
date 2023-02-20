@@ -17,10 +17,9 @@
 
 @media screen and (max-width: 950px) {
     .feed_container{
-        width: 100%;
+        width: 90%;
     }
 }
-
 
 .feed_container > .feeds{
     width: 70%;
@@ -30,3 +29,19 @@
     gap: 15px;
 }
 
+@media screen and (max-width: 690px) {
+    .feed_container > .feeds{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .feed_container{
+        margin: 0;
+        margin-top: 61px;
+    }
+    .feed_container > .feeds{
+        width: 85%;
+        
+    }
+}

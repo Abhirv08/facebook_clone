@@ -46,3 +46,8 @@
     transition: all 0.25s ease-in-out;
 }
 
+@media screen and (max-width: 450px){ 
+    .status_card_container{
+        padding-left: 10px;
+    }
+}

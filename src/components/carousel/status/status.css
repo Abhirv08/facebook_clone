@@ -4,7 +4,8 @@
     justify-content: space-between;
     flex-basis: 1;
     height: 13rem;
-    width: 37rem;
+    width: 80%;
+    gap: 10px;
     position: relative;
     cursor: pointer;
 }
@@ -95,3 +96,22 @@
     background-color: #ebe8e8;
     transition: all 1s ease-in-out;
 }
+
+@media (min-width: 1200px) and (max-width: 1250px){
+    .status_container:nth-child(5){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .feed_container > .status_container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .feed_container > .status_container{
+        width: 100%;
+    }
+}
+

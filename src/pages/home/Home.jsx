@@ -18,6 +18,14 @@ export default function Home() {
         <Feed />
         {tablet && <Rightbar />}
       </div>
+      <div className="tooltip_container">
+        <span className='tooltip_text'>New Message</span>
+        <div className="new_message"
+          onMouseEnter={() => document.querySelector(".tooltip_text").style.visibility = 'visible'}
+          onMouseLeave={() => document.querySelector(".tooltip_text").style.visibility = 'hidden'}>
+          <img src="./assets/edit.png" alt="new message" />
+        </div>
+      </div>
     </div>
   )
 }
