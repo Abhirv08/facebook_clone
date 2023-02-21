@@ -56,6 +56,18 @@
     color: rgb(114, 114, 114);
 }
 
+
+.post_container > .dp_and_name_container > .more_actions_icons > div{
+    
+    padding: 5px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.post_container > .dp_and_name_container > .more_actions_icons > div:hover{
+    background-color: rgba(0,0,0,0.1);
+}
 .more_actions, .remove{
     cursor: pointer;
 }

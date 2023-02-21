@@ -18,8 +18,8 @@ export default function Post() {
                     <div className='name'>John <br /> <span>3 d</span></div>
                 </div>
                 <div className='more_actions_icons'>
-                    <MoreHorizIcon className='more_actions'/>
-                    <ClearOutlinedIcon className='remove' />
+                    <div><MoreHorizIcon className='more_actions'/></div>
+                    <div><ClearOutlinedIcon className='remove' /></div>
                 </div>
             </div>
             <img src="./assets/person/person10.jpg" alt="post" />
