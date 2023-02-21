@@ -39,9 +39,10 @@
     .feed_container{
         margin: 0;
         margin-top: 61px;
+        width: 100%;
     }
+
     .feed_container > .feeds{
-        width: 85%;
-        
+        width: 100%;        
     }
 }

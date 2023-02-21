@@ -3,6 +3,7 @@ import StatusCard from "../../carousel_item/status_card/StatusCard"
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import MediaQuery from 'react-responsive';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Status() {
     const dp = {
@@ -12,6 +13,9 @@ export default function Status() {
     const handleMouseEnter = () => {
         document.querySelector(".story_dp").style.transform = 'scale(102%)';
     }
+
+    const phones = useMediaQuery({query: '(min-width: 450px)'})
+
 
     return (
         <div className="status_container">
@@ -26,10 +30,10 @@ export default function Status() {
             </div>
             <StatusCard statusimage="./assets/status/status1.jpg" dpimage="./assets/person/person1.jpg" />
             <StatusCard statusimage="./assets/status/status2.jpg" dpimage="./assets/person/person2.jpg" />
-            <StatusCard statusimage="./assets/status/status3.jpg" dpimage="./assets/person/person3.jpg" />
-            <MediaQuery minWidth={700}>
+            {phones && <StatusCard statusimage="./assets/status/status3.jpg" dpimage="./assets/person/person3.jpg" />}
+            {phones && <MediaQuery minWidth={700}>
                 <StatusCard statusimage="./assets/status/status4.jpg" dpimage="./assets/person/person4.jpg" />
-            </MediaQuery>
+            </MediaQuery>}
             <div className="see_status"
                 onMouseEnter={() => document.querySelector(".see_all_stories").style.visibility = "visible"}
                 onMouseLeave={() => document.querySelector(".see_all_stories").style.visibility = "hidden"}

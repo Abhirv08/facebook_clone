@@ -2,8 +2,12 @@ import './addPost.css'
 import VideoCallIcon from '@mui/icons-material/VideoCall';
 import EmojiEmotionsOutlinedIcon from '@mui/icons-material/EmojiEmotionsOutlined';
 import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
+import { useMediaQuery } from '@mui/material';
+
 
 export default function AddPost() {
+    const laptopsAndTablets = useMediaQuery('(min-width: 450px)');
+
     return (
         <div className='addpost_container'>
             <div className="addpost_content">
@@ -20,10 +24,10 @@ export default function AddPost() {
                     <AddPhotoAlternateIcon />
                     <p>Photo/video</p>
                 </div>
-                <div>
+                {laptopsAndTablets && <div>
                     <EmojiEmotionsOutlinedIcon />
                     <p>Feeling/activity</p>
-                </div>
+                </div>}
             </div>
         </div>
     )
