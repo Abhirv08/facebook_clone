@@ -4,9 +4,9 @@
   background-color: #ffffff;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.18);
--webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.18);
--moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.18);
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.18);
 }
 
 .addpost_container > .addpost_content {
@@ -88,4 +88,10 @@
 .addpost_container > .post_attachments > div > p {
   color: rgb(122, 122, 122);
   font-weight: 500;
+}
+
+@media screen and (max-width: 450px){
+  .addpost_container{
+    margin-top: 0;
+  }
 }

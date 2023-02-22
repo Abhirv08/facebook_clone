@@ -126,6 +126,7 @@
 
 .navbar_container > .last_part > .add {
   display: none;
+  background-color: #e5e7eb;
 }
 
 .navbar_container > .last_part > .messenger_logo {
@@ -193,11 +194,18 @@
     padding-right: 5%;
     justify-content: flex-end;
   }
+
+  .navbar_container > .last_part > .add{
+    background-color: #e5e7eb;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .navbar_container > .middle_part > .mid_icons_container > .hamburger_icon {
     display: none;
+  }
+  .navbar_container > .last_part > .add{
+    background-color: #e5e7eb;;
   }
 }
 
@@ -241,6 +249,10 @@
   .navbar_container > .last_part {
     padding-right: 5%;
     justify-content: flex-end;
+  }
+
+  .navbar_container > .last_part > .add{
+    background-color: #e5e7eb;
   }
 }
 

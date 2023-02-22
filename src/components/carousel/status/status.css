@@ -64,37 +64,22 @@
 }
 
 
+
+
 .feed_container > .status_container > .see_status{
     position: absolute;
+    right: -18px;
+    top: 35%;
+    font-size: 36px;
+    padding: 5px;
     background-color: white;
-    width: 2.5rem; height: 2.5rem;
-    border: 1px solid #E4E7EA;
     border-radius: 50%;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-    top: 40%;
-    right: -1.25rem;
 }
 
-.feed_container > .status_container > .see_status > .see_all_stories{
-    position: absolute;
-    display: block;
-    width: 6rem;
-    bottom: -2.25rem;
-    text-align: center;
-    padding: 10px 0;
-    background-color: rgb(53, 51, 51);
-    color: rgb(228, 227, 227);
-    font-size: 0.76rem;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px rgb(68, 68, 68);
-    visibility: hidden;
-}
-
-.feed_container > .status_container > .see_status:hover{
-    background-color: #ebe8e8;
-    transition: all 1s ease-in-out;
+@media screen and (min-width: 768px) {
+    .feed_container > .status_container > .see_status{
+        top: 40%;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1250px){
@@ -115,3 +100,14 @@
     }
 }
 
+@media (min-width: 801px) and (max-width: 900px) {
+    .feed_container > .status_container{
+        width: 85%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+    .feed_container > .status_container{
+        width: 90%;
+    }
+}

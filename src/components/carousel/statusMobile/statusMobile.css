@@ -1,0 +1,15 @@
+.mobile_status_container{
+    display: flex;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.mobile_status_container > .see_status{
+    position: absolute;
+    right: -18px;
+    top: 35%;
+    font-size: 36px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+}
